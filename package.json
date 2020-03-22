@@ -1,9 +1,11 @@
 {
   "name": "electron_update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "electron update example",
   "main": "main.js",
   "scripts": {
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always",
     "test": "test",
     "start": "electron ."
   },
@@ -22,7 +24,5 @@
   },
   "dependencies": {
     "electron-updater": "^4.2.5"
-  },
-  "build": "electron-builder build --win --publish never",
-  "deploy": "electron-builder build --win --publish always"
+  }  
 }
